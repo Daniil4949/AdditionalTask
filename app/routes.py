@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from app.schemas import StudentCreateModel, StudentModel, StudentListModel
-from app.orm_commands import add_new_student, get_student_by_id, get_students, delete_student_by_id
+from app.orm_commands import add_new_student, get_students, get_student_by_id, delete_student_by_id
 
 router = APIRouter(
     prefix="/students",
